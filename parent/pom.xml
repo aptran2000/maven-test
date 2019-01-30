@@ -250,12 +250,6 @@
 
 	<repositories>
 		<repository>
-		    <id>Nexus</id>
-		    <name>Nexus Public Repository</name>
-		    <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
-		    <layout>default</layout>
-		 </repository>
-		<repository>
             <id>Central</id>
             <name>Central</name>
             <url>http://repo1.maven.org/maven2/</url>
@@ -278,6 +272,9 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        <pluginRepository>
+		  	<id>mule-public</id>
+		  	<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</pluginRepository>
     </pluginRepositories>
-
 </project>
