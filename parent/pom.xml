@@ -112,7 +112,7 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<id>standalone</id>
@@ -249,18 +249,6 @@
 	</dependencies>
 
 	<repositories>
-		<!-- EnterpriseEditionOnly <repository>
-			<id>MuleRepository</id>
-			<name>MuleRepository</name>
-			<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
-			<layout>default</layout>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>-->
 		<repository>
 	        <id>mulesoft-public</id>
 	        <name>MuleSoft Public Repository</name>
