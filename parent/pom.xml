@@ -249,7 +249,7 @@
 	</dependencies>
 
 	<repositories>
-		<repository>
+		<!-- EnterpriseEditionOnly <repository>
 			<id>MuleRepository</id>
 			<name>MuleRepository</name>
 			<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
@@ -260,7 +260,7 @@
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
-		</repository>
+		</repository>-->
 		<repository>
 	        <id>mulesoft-public</id>
 	        <name>MuleSoft Public Repository</name>
