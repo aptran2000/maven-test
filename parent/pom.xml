@@ -19,7 +19,7 @@
 		<!-- <anypoint.username>${env.ANYPOINT_USERNAME}</anypoint.username>
 		<anypoint.password>${env.ANYPOINT_PASSWORD}</anypoint.password>
 		-->
-		<mule.version>3.9.2</mule.version>
+		<mule.version>3.9.0</mule.version>
 		<mule.runtime.community>true</mule.runtime.community>
 		<cloundhub.env>Sandbox</cloundhub.env>
 		<anypoint.uri>https://anypoint.mulesoft.com</anypoint.uri>
