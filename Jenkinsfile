@@ -9,7 +9,7 @@ pipeline {
 	stage('Build') { 
 		steps {
 			withMaven(maven:'maven'){
-				sh 'mvn -f maven_w_munit/pom.xml clean install'
+				sh 'mvn -f maven-test/pom.xml clean install'
 			}
 		}
     }
@@ -19,7 +19,7 @@ pipeline {
       }
       steps {
 		withMaven(maven:'maven'){
-			sh 'mvn -f maven_w_munit/pom.xml package deploy -Danypoint.username=${ANYPOINT_CREDENTIALS_UN} -Danypoint.password=${ANYPOINT_CREDENTIALS_PWD} -DmuleDeploy'
+			sh 'mvn -f maven-test/pom.xml package deploy -Danypoint.username=${ANYPOINT_CREDENTIALS_UN} -Danypoint.password=${ANYPOINT_CREDENTIALS_PWD} -DmuleDeploy'
 		}
       }
     }
