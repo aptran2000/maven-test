@@ -6,12 +6,21 @@ pipeline {
         sh 'mvn clean test'
       }
     }
+	stage('Build') { 
+		steps {
+			withMaven(maven:'maven'){
+				sh 'mvn -f maven_w_munit/pom.xml clean install'
+			}
+		}
+    }
     stage('Deploy CloudHub') { 
       environment {
         ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
       }
       steps {
-        sh 'mvn deploy -P cloudhub -Dmule.version=3.9.0 -Danypoint.username=${ANYPOINT_CREDENTIALS_UN} -Danypoint.password=${ANYPOINT_CREDENTIALS_PWD} -Dmaven.repo.local="C:\Users\Anh\.m2\repository" --settings "C:\Users\Anh\.m2\settings.xml"' 
+		withMaven(maven:'maven'){
+			sh 'mvn -f maven_w_munit/pom.xml package deploy -Danypoint.username=${ANYPOINT_CREDENTIALS_UN} -Danypoint.password=${ANYPOINT_CREDENTIALS_PWD} -DmuleDeploy'
+		}
       }
     }
   }
