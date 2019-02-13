@@ -15,7 +15,7 @@
 		<!--  <licensePath>LICENSE.md</licensePath> -->
 		<mule.tools.version>1.7</mule.tools.version>
 		<mule.home>I:\Mule\MuleEE_3.9.2</mule.home> 
-		<artifactId>maven-test-le</artifactId>
+		<artifactId>maven-test-le2</artifactId>
 		<!-- <anypoint.username>${env.ANYPOINT_USERNAME}</anypoint.username>
 		<anypoint.password>${env.ANYPOINT_PASSWORD}</anypoint.password>
 		-->

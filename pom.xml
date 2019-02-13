@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>au.com.tranle</groupId>
-	<artifactId>maven-test-le</artifactId>
+	<artifactId>maven-test-le2</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule</packaging>
 	<name>Mule maven_w_munit Application</name>
@@ -94,7 +94,7 @@
 			<version>${mule.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
         	<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-jdbc</artifactId>
 			<version>${mule.version}</version>
@@ -105,7 +105,7 @@
 			<artifactId>mule-transport-jms</artifactId>
 			<version>${mule.version}</version>
 			<scope>provided</scope>
-		</dependency> -->
+		</dependency>
 		<dependency>
 			<groupId>org.mule.transports</groupId>
 			<artifactId>mule-transport-vm</artifactId>
