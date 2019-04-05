@@ -11,6 +11,8 @@ pipeline {
         }
       }
     }
+	
+	
 	stage('Build') { 
 		steps {
 			withMaven(maven:'maven'){
@@ -18,6 +20,7 @@ pipeline {
 			}
 		}
     }
+	
     stage('Deploy') { 
       steps {
 		withMaven(maven:'maven'){
