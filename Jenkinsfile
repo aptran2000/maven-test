@@ -3,6 +3,9 @@ pipeline {
   environment {
         ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
       }
+	  
+	  
+	  
   stages {
     stage('Unit Test') { 
       steps {
@@ -11,6 +14,7 @@ pipeline {
         }
       }
     }
+	
 	stage('Build') { 
 		steps {
 			withMaven(maven:'maven'){
